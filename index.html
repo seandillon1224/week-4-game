@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<body background="./assets/images/dark-triangles.png">
+	<title>Crystal Collector!</title>
+	 <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+	<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Crystal Collector!</h1>
+    <p class="lead">Click the crystals and match your number to win!</p>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <p> You will be given a random number at the start of the game.</p> 
+    <p> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+    <p>You win the game by matching your total score to your assigned random number, you lose if the total score goes above this number</p>
+    <p> The value of each crystal is hidden from you until you click on it.</p>
+    <p> Each time when the game starts, the game will change the value of each crystal</p>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-1">
+      	<button id= "red" type="button" class="btn btn-danger btn-lg">
+      	<img  class="crystal" src= "./assets/images/red.png" alt= "Sean Dillon">
+      </button>
+    </div>
+	<div class="col-sm-1">
+		<button id= "blue" type="button" class="btn btn-danger btn-lg">
+		<img class="crystal" src= "./assets/images/blue.png" alt= "Sean Dillon">
+	</button>
+	</div>
+	<div class="col-sm-1">
+		<button id= "green" type="button" class="btn btn-danger btn-lg">
+		<img class="crystal" src= "./assets/images/green.jpg" alt= "Sean Dillon">
+	</button>
+	</div>
+	<div class="col-sm-1">
+		<button id= "purple" type="button" class="btn btn-danger btn-lg">
+		<img class="crystal" src= "./assets/images/purple.png" alt= "Sean Dillon">
+	</button>
+	</div>
+  </div>
+  <br>
+  <div class="row">
+  	<div id ="randomnumber" class="col-sm-4">
+  		Random Number: 
+  	</div>
+  	<div class="col-sm-4">
+  		<div id="wins" class="row">
+  			Wins: 0
+  		</div>
+  		<div id="losses" class="row">
+  			Losses: 0
+  		</div>
+  	</div>
+  	<div id= "totalscore" class="col-sm-4">
+  		Your Total Score Is:
+  	</div>
+  </div>
+</div>
+
+</body>
+<script type=text/javascript src=./assets/javascript/game.js></script>
+</html>
